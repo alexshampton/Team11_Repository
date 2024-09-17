@@ -1,0 +1,7 @@
+# Ignore Python virtual environment
+.venv/
+
+# Ignore Python bytecode cache directories
+__pycache__/
+
+static/img/otp_qr_code.png
