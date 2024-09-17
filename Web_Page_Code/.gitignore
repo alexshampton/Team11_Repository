@@ -4,4 +4,4 @@
 # Ignore Python bytecode cache directories
 __pycache__/
 
-otp_qr_code.png
+static/img/otp_qr_code.png
