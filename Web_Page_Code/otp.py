@@ -13,13 +13,13 @@ def load_user_data(file_path):
         print(f"Error loading Excel file: {e}")
         return None
 
-# Hash the password for secure comparison (you can modify this part as needed)
+# Hash the password for secure comparison (if we need to)
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
 
 # Check the username and password, and retrieve the user's secret key
 def validate_user(username, password, df):
-    # Hash the password for comparison
+    # Hash the password for comparison if needed
     # hashed_password = hash_password(password)
     
     # Search for the user in the DataFrame
@@ -27,7 +27,6 @@ def validate_user(username, password, df):
     
     if not user_row.empty:
         stored_password = user_row.iloc[0]['Password']
-        print(stored_password)
         
         # Check if the hashed password matches
         if password == stored_password:
@@ -69,7 +68,7 @@ def validate_otp(secret_key, otp_input):
     return totp.verify(otp_input)
 
 def main():
-    file_path = "users.xlsx"
+    file_path = "/data/users.xlsx"
     df = load_user_data(file_path)
 
     if df is None:
@@ -89,19 +88,6 @@ def main():
             print("Invalid OTP. Login failed.")
     else:
         print("Not obiwan")
-
-
-    # # Generate secret for the first time (save this securely for future logins)
-    # secret_key = generate_secret()
-    # print(f"Your secret key is: {secret_key}")
-    
-    # Generate and show QR code for Google Authenticator
-    # generate_qr_code(username, secret_key)
-    
-    # Ask for OTP from the user (they would get this from their Google Authenticator app)
-    
-    # Validate OTP
-
 
 if __name__ == "__main__":
     main()
