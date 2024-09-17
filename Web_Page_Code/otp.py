@@ -68,7 +68,7 @@ def validate_otp(secret_key, otp_input):
     return totp.verify(otp_input)
 
 def main():
-    file_path = "/data/users.xlsx"
+    file_path = "data/users.xlsx"
     df = load_user_data(file_path)
 
     if df is None:
