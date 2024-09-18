@@ -66,28 +66,3 @@ def generate_qr_code(user_name, secret_key):
 def validate_otp(secret_key, otp_input):
     totp = pyotp.TOTP(secret_key)
     return totp.verify(otp_input)
-
-def main():
-    file_path = "data/users.xlsx"
-    df = load_user_data(file_path)
-
-    if df is None:
-        print("Failed to load user data.")
-        return
-    
-    username = input("Enter your name: ")
-    password = input("Enter your password: ")
-    
-    isObiwan, secret_key = validate_user(username, password, df)
-
-    if(isObiwan):
-        user_otp = input("Enter the OTP from Google Authenticator: ")
-        if validate_otp(secret_key, user_otp):
-            print("Login successful!")
-        else:
-            print("Invalid OTP. Login failed.")
-    else:
-        print("Not obiwan")
-
-if __name__ == "__main__":
-    main()

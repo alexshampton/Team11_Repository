@@ -33,9 +33,17 @@
 
 ## Scripts
 * main.py: Runs server and renders the html pages.
-    * Requirements: Install Dependencies.
+    * Requirements: Install Dependencies. To ensure images are outputted to the scrollable table, store the images in static/img/death_star_images.
+    * Directories:
+        * static: holds images and css files
+            * css: holds css files
+            * img: holds images and background image
+                * death_star_images: holds specifically death star images
+        * data: holds Obi-Wan password and secret key
+        * docs: holds documents (README)
+        * templates: holds html files
     * Input: User information.
-    * Output: Html pages.
-* otp.py: Checks user's name and password to see if it matches with the one stored in data/users.xlsx. This needs to be converted to be used by flask and html page.
+    * Output: Html pages and allows navigation between the pages.
+* otp.py: Checks user's name and password to see if it matches with the one stored in data/users.xlsx. Functions within this file are used in the flask instance (main.py)
     * Requirements: data/users.xlsx with obiwans user name, password, and secret key.
     * Output: If user is obiwan or not obi wan,
