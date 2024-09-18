@@ -4,4 +4,4 @@
 # Ignore Python bytecode cache directories
 __pycache__/
 
-static/img/*.jpeg
+static/img/death_star_images/*.jpeg
