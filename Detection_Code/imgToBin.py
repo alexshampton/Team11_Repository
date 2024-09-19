@@ -39,4 +39,19 @@ def binary_file_add(imageDirectory, binaryDirectory):
         print("No images are in the images directory!")
 
 if __name__ == "__main__":
-    binary_file_add('images', 'binary')
+    image_dir = 'death_star_images'
+    bin_dir = 'binary'
+
+    if not os.path.exists(image_dir):
+    # Create the directory
+        os.makedirs(image_dir)
+        print(f"Directory {image_dir} created.\nAdd images to directory")
+        exit()
+
+    if not os.path.exists(bin_dir):
+    # Create the directory
+        os.makedirs(bin_dir)
+        print(f"Directory {bin_dir} created.")
+
+    
+    binary_file_add(image_dir, bin_dir)
