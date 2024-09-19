@@ -50,7 +50,7 @@ def login_post():
 
     else:
         print("Not obiwan")
-        return('Invalid username or password. Please try again.')
+        return redirect(url_for('galaxy_render'))  # Redirect to Galaxy page
 
 # Route to display OTP input form
 @app.route('/otp', methods=['GET'])
@@ -76,7 +76,7 @@ def verify_otp():
     
     else:
         print("Invalid OTP. Login failed.")
-        return(render_template('galaxy.html'))
+        return redirect(url_for('otp'))
 
 @app.route("/GalaxyVideo")
 def galaxy_render():
