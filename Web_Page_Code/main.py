@@ -11,6 +11,11 @@ app.secret_key = '1234'
 def death_star_weaknesses_render():\
     # Retrieve image filenames from the static/img directory
     image_dir = os.path.join(app.static_folder, 'img/death_star_images')
+    if not os.path.exists(image_dir):
+    # Create the directory
+        os.makedirs(image_dir)
+        print(f"Directory {image_dir} created.")
+
     images = [f'img/death_star_images/{filename}' for filename in os.listdir(image_dir) if filename.endswith(('.jpg', '.png', '.jpeg'))]
 
     return render_template('death_star_weaknesses.html', images=images) 
