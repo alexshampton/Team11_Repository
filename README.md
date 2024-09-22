@@ -1,5 +1,12 @@
 # Team 11
 
+Table of Contents 
+* Links to each section for easy navigation.
+    * 2FA
+    * ImageAI 
+    * Flask
+
+
 Exfiltration and Dissemination of the DeathStar(Project Title)
 
 Project Description
@@ -11,15 +18,15 @@ Description of each repository
 
 
 Design Objectives
-      1: Detect Death Star images. 
-      2: Compress and encrypt the Death Star images. 
-      3: Transmit the Death Star images to the Rebel Army’s server. 
-      4: The server detects any red circles in the Death Star plans. 
-      5: The server hosts a public website where weaknesses are displayed and downloadable. 
-      6: The entirety of Princess Leia’s video can only be viewed by Obi-Wan.
+- Detect Death Star images. 
+- Compress and encrypt the Death Star images. 
+- Transmit the Death Star images to the Rebel Army’s server. 
+- The server detects any red circles in the Death Star plans. 
+- The server hosts a public website where weaknesses are displayed and downloadable. 
+- The entirety of Princess Leia’s video can only be viewed by Obi-Wan.
 
 
-4. Design Requirements 
+Design Requirements 
 - The system shall detect at least 60% of the Death Star images from a library of 1024x1024 pixel PNG images.
 - The Death Star images shall be compressed by at least 5 percent of the original Death Star image.
 - The Death Star images shall be encrypted following DES.
@@ -34,7 +41,7 @@ Design Objectives
 - The webpage shall allow any user to view the non-confidential part of Princess Leia's video.
 - The webpage shall only allow Obi-Wan to view the entire Princess Leia video.
 
-4. Design Requirements Definition
+Design Requirements Definition
 - System: The Raspberry Pi and other components inside of the lab.
 - Death Star images: 1024 x 1024 pixel PNG files that depict a weaponized space station.
 - Detect: Being able to distinguish between target images and miscellaneous images.
@@ -65,11 +72,7 @@ DESIGN CONSTRAINTS
 
 
 
-Table of Contents (Optional but useful for long README files)
-* Links to each section for easy navigation.
-    * 2FA
-    * ImageAI 
-    * Flask
+
 
 
 FLASK(Repository)
