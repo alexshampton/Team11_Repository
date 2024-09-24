@@ -1,0 +1,7 @@
+*.o        # Ignore object files
+*.a        # Ignore static libraries
+*.so       # Ignore shared libraries
+*.out      # Ignore output files
+bin/       # Ignore bin directory
+build/     # Ignore build directory
+jabcodeLib/
