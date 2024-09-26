@@ -5,3 +5,5 @@
 bin/       # Ignore bin directory
 build/     # Ignore build directory
 jabcodeLib/
+jabcodeReader
+jabcodeWriter
