@@ -1,8 +1,4 @@
-*.o        # Ignore object files
-*.a        # Ignore static libraries
-*.so       # Ignore shared libraries
-*.out      # Ignore output files      
-build/     # Ignore build directory
-jabcodeLib/
-jabcodeReader
-jabcodeWriter
+~/*.o        # Ignore object files
+~/*.a        # Ignore static libraries
+~/*.so       # Ignore shared libraries
+~/*.out      # Ignore output files      
