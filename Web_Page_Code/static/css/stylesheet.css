@@ -1,0 +1,129 @@
+body 
+{
+    background-image: url('../img/background.png');
+    background-size: cover;
+}
+
+.title 
+{
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+}
+
+.navigation
+{
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+    top: 0;
+
+    ul 
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    li a 
+    {
+        display: block;
+        color: #feda4a;
+        font-family: 'Pathway Gothic One', sans-serif;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li 
+    {
+        float:left;
+    }
+
+    li a:hover
+    {
+        background-color: #111;
+    }
+
+    li a:active
+    {
+        background-color: #af814c;
+    }
+
+    .active
+    {
+        background-color: #af814c;
+    }
+
+
+}
+
+.scrollable-table 
+{
+    max-height: 77vh;
+    overflow-y: auto;
+    display: block;
+    margin: 0 auto; /* Center the table */
+
+}
+
+table 
+{
+    width: 95%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td 
+{
+    padding: 100px;
+    text-align: center;
+    border: 2px solid #feda4a;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+}
+
+button {
+    background-color: #333;
+    color: #feda4a;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #111;
+}
+
+.userinput
+{
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size:x-large;
+    display: grid;
+    text-align: center;
+    place-items: center; /* Centers both vertically and horizontally */
+    /* height: 80vh;       Full viewport height */
+}
+
+.youtubeVideo
+{
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size:x-large;
+    display: grid;
+    text-align: center;
+    place-items: center; /* Centers both vertically and horizontally */
+    /* height: 80vh;       Full viewport height */
+}
