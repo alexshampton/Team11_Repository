@@ -1,0 +1,4 @@
+~/*.o        # Ignore object files
+~/*.a        # Ignore static libraries
+~/*.so       # Ignore shared libraries
+~/*.out      # Ignore output files      
