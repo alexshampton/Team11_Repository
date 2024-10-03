@@ -3,4 +3,7 @@
 ~/*.so       # Ignore shared libraries
 ~/*.out      # Ignore output files    
 ~/.venv
-~/__pycache__  
+~/__pycache__ 
+~/*.bin
+~/binarySplit
+.bin 
