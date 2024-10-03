@@ -1,4 +1,6 @@
 ~/*.o        # Ignore object files
 ~/*.a        # Ignore static libraries
 ~/*.so       # Ignore shared libraries
-~/*.out      # Ignore output files      
+~/*.out      # Ignore output files    
+~/.venv
+~/__pycache__  

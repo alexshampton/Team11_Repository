@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">        
+        <title>Log In</title>
+    </head>
+    
+    <body>
+        <div class="title">
+            <h2>Team 11 Death Star Detection</h2>
+        </div>
+        
+        <div class="navigation">
+            <ul>
+                <li><a a href="/DeathStarWeaknesses"> Death Star Weaknesses</a></li>
+                <li><a a href="/GalaxyVideo"> Galaxy Video</a></li>
+                <li><a a class="active" a href="/"> Obi-Wan Login</a></li>
+            </ul>
+        </div>
+
+        <div class="userinput">
+            <p>Login</p>
+            <form action="/login" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+
+    </body>
+</html>
