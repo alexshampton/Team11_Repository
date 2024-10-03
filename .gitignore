@@ -5,7 +5,7 @@
 ~/.venv
 ~/__pycache__ 
 ~/*.bin
-~/binarySplit
+/binarySplit
 *.bin
 *.jpeg
 *.png 
