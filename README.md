@@ -9,7 +9,7 @@ Table of Contents
 
 Exfiltration and Dissemination of the DeathStar(Project Title)
 
-Project Description
+## Project Description
 * Mention the problem it solves or the use case it addresses.
     * This project is a simulation of a stealth operation where a very high profile plans: Death Star plans, are transmitted from a raspberry pi to a rebel server secretly and then is made available to the galaxy(public at large). This high profile information must be transferred without the detection by the imperial guards. 
     * The plans would be accessible to the galaxy the moment the plans have been uploaded to the rebel server. the webpage will analyze the plans looking for weakness(identifiable by the red circles). The webpage will in the display format of a scrollable table of image that are representing the contents of a red circle from the plans. 
@@ -17,7 +17,7 @@ Project Description
 Description of each repository
 
 
-Design Objectives
+## Design Objectives
 - Detect Death Star images. 
 - Compress and encrypt the Death Star images. 
 - Transmit the Death Star images to the Rebel Army’s server. 
@@ -26,7 +26,7 @@ Design Objectives
 - The entirety of Princess Leia’s video can only be viewed by Obi-Wan.
 
 
-Design Requirements 
+## Design Requirements 
 - The system shall detect at least 60% of the Death Star images from a library of 1024x1024 pixel PNG images.
 - The Death Star images shall be compressed by at least 5 percent of the original Death Star image.
 - The Death Star images shall be encrypted following DES.
@@ -41,7 +41,10 @@ Design Requirements
 - The webpage shall allow any user to view the non-confidential part of Princess Leia's video.
 - The webpage shall only allow Obi-Wan to view the entire Princess Leia video.
 
-Design Requirements Definition
+
+
+
+## Design Requirements Definition
 - System: The Raspberry Pi and other components inside of the lab.
 - Death Star images: 1024 x 1024 pixel PNG files that depict a weaponized space station.
 - Detect: Being able to distinguish between target images and miscellaneous images.
@@ -58,7 +61,7 @@ Design Requirements Definition
 - Downloaded: A way of retrieving data from the webpage.
 - Princess Leia Video: A video created by Princess Leia that contains a personal message, with some information to only be viewed by Obi-Wan.
 
-DESIGN CONSTRAINTS
+## DESIGN CONSTRAINTS
 - The server and its components shall not be within 5 meters of the lab window.
 - The equipment shall cost $300 or less.
 - The images of Death Star weaknesses displayed shall be in a scrollable table.
@@ -75,7 +78,7 @@ DESIGN CONSTRAINTS
 
 
 
-FLASK(Repository)
+##  FLASK(Repository)
 - main.py: Runs server and renders the html pages.
 * Requirements: Install Dependencies. To ensure images are outputted to the scrollable table, store the images in static/img/death_star_images.
 * Directories:
