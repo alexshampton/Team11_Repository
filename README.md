@@ -10,10 +10,9 @@ Table of Contents
 Exfiltration and Dissemination of the DeathStar(Project Title)
 
 ## Project Description
-* Mention the problem it solves or the use case it addresses.
-    * This project is a simulation of a stealth operation where a very high profile plans: Death Star plans, are transmitted from a raspberry pi to a rebel server secretly and then is made available to the galaxy(public at large). This high profile information must be transferred without the detection by the imperial guards. 
-    * The plans would be accessible to the galaxy the moment the plans have been uploaded to the rebel server. the webpage will analyze the plans looking for weakness(identifiable by the red circles). The webpage will in the display format of a scrollable table of image that are representing the contents of a red circle from the plans. 
-    * The project demonstrates secure data transmission, image processing, and dynamic UI display on mobile devices, all within the context of a stealth mission.
+- This project is a simulation of a stealth operation where a very high profile plans: Death Star plans, are transmitted from a raspberry pi to a rebel server secretly and then is made available to the galaxy(public at large). This high profile information must be transferred without the detection by the imperial guards.
+-  The plans would be accessible to the galaxy the moment the plans have been uploaded to the rebel server. the webpage will analyze the plans looking for weakness(identifiable by the red circles). The webpage will in the display format of a scrollable table of image that are representing the contents of a red circle from the plans.
+-  The project demonstrates secure data transmission, image processing, and dynamic UI display on mobile devices, all within the context of a stealth mission.
 Description of each repository
 
 
