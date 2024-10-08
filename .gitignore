@@ -11,4 +11,7 @@ ServerCode/Web_Page_Code/__pycache__
 RaspberryPiCode/Binary_Conversion/binary/binarySplit
 RaspberryPiCode/Binary_Conversion/*.tar*
 RaspberryPiCode/Binary_Conversion/md5sum.txt
+RaspberryPiCode/Binary_Conversion/binary/binarySplit
+ServerCode/JabcodeRead/zippedFiles
+ServerCode/JabcodeRead/compressedFiles
 
