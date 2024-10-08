@@ -4,7 +4,7 @@ Table of Contents
 * Links to each section for easy navigation.
     * 2FA
     * ImageAI 
-    * Flask  (https://github.com/alexshampton/Team11_Repository/edit/main/README.md#flaskrepository)
+    * Flask  
 
 
 Exfiltration and Dissemination of the DeathStar(Project Title)
