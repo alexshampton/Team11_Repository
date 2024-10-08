@@ -1,5 +1,5 @@
 #!/bin/bash
-python3 imgToBin.py
+# python3 imgToBin.py
 
 # Path to the jabcodeWriter binary
 JABCODE_WRITER="$HOME/Team11_Repository/Jabcode/jabcodeRepo/src/jabcodeWriter/bin/jabcodeWriter"
@@ -7,17 +7,25 @@ JABCODE_WRITER="$HOME/Team11_Repository/Jabcode/jabcodeRepo/src/jabcodeWriter/bi
 # Input directory containing binary files
 BIN_DIR="binary"
 BIN_SPLIT_DIR="binary/binarySplit"
+IMAGES_DIR="$HOME/Team11_Repository/Death_Star_Images/Testing_Images" #CHANGE DIR TO DETECTED IMAGES
+COMPRESSED_FILE="Death_Star_Images.tar.gz"
+ENCRYPTED_FILE="Death_Star_Images.tar.gz.enc"
+
 # Create output directory if it doesn't exist
 mkdir -p "jabcodes"
 mkdir -p "binary/binarySplit"
 # chmod -R 755 "$BIN_DIR"
 # chmod -R 755 "$BIN_SPLIT_DIR"
-
-for bin_file in "$BIN_DIR"/*.bin; do
-    base_name=$(basename "$bin_file" .bin)
-    split -b 4k "$bin_file" "$BIN_SPLIT_DIR/$base_name-"
-    echo $base_name 
-done
+make -C $HOME/Team11_Repository/Jabcode/jabcodeRepo/src/jabcodeWriter
+tar -czvf "$COMPRESSED_FILE" "$IMAGES_DIR" #Compresses images folder
+md5sum "$COMPRESSED_FILE" > md5sum.txt
+openssl enc -aes-256-cbc -salt -in "$COMPRESSED_FILE" -out "$ENCRYPTED_FILE" 
+split -b 4k "$ENCRYPTED_FILE" "$BIN_SPLIT_DIR/$ENCRYPTED_FILE"_
+# for bin_file in "$BIN_DIR"/*.bin; do
+#     base_name=$(basename "$bin_file" .bin)
+#     split -b 4k "$bin_file" "$BIN_SPLIT_DIR/$base_name-"
+#     echo $base_name 
+# done
 
 # Iterate over each .bin file in the bin directory
 COUNT=0
