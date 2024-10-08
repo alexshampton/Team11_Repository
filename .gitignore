@@ -3,4 +3,12 @@
 *.so       # Ignore shared libraries
 *.out      # Ignore output files    
 ServerCode/Web_Page_Code/.venv
-ServerCode/Web_Page_Code/__pycache__  
+ServerCode/Web_Page_Code/__pycache__ 
+/binarySplit
+*.bin
+*.jpeg
+*.png 
+RaspberryPiCode/Binary_Conversion/binary/binarySplit
+RaspberryPiCode/Binary_Conversion/*.tar*
+RaspberryPiCode/Binary_Conversion/md5sum.txt
+
