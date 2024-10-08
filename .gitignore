@@ -1,6 +1,6 @@
-~/*.o        # Ignore object files
-~/*.a        # Ignore static libraries
-~/*.so       # Ignore shared libraries
-~/*.out      # Ignore output files    
-~/.venv
-~/__pycache__  
+*.o        # Ignore object files
+*.a        # Ignore static libraries
+*.so       # Ignore shared libraries
+*.out      # Ignore output files    
+ServerCode/Web_Page_Code/.venv
+ServerCode/Web_Page_Code/__pycache__  
