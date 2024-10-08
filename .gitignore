@@ -10,3 +10,4 @@
 *.jpeg
 *.png 
 RaspberryPiCode/Binary_Conversion/binary/binarySplit
+RaspberryPiCode/Binary_Conversion/*.tar*
