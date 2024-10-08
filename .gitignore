@@ -11,3 +11,4 @@
 *.png 
 RaspberryPiCode/Binary_Conversion/binary/binarySplit
 RaspberryPiCode/Binary_Conversion/*.tar*
+RaspberryPiCode/Binary_Conversion/md5sum.txt
