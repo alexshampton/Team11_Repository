@@ -3,7 +3,6 @@ JABCODE_READER="$HOME/Team11_Repository/Jabcode/jabcodeRepo/src/jabcodeReader/bi
 # Input directory containing binary files
 JABCODE_DIR="$HOME/Team11_Repository/ServerCode/JabcodeRead/jabcodes" #CHANGE DIR TO JABCODE IMAGES
 ENCRYPTED_DIR="$HOME/Team11_Repository/ServerCode/JabcodeRead/encryptedFiles"
-COMPRESSED_DIR="$HOME/Team11_Repository/ServerCode/JabcodeRead/compressedFiles"
 IMAGE_DIR="$HOME/Team11_Repository/ServerCode/JabcodeRead/death_star_images"
 
 COMPRESSED_FILE="Death_Star_Images.tar.gz"
@@ -11,8 +10,7 @@ ENCRYPTED_FILE="Death_Star_Images.tar.gz.enc"
 
 # Create output directory if it doesn't exist
 mkdir -p "encryptedFiles"
-mkdir -p "death_star_images"
-mkdir -p "compressedFiles"
+mkdir -p "jabcodes"
 make -C $HOME/Team11_Repository/Jabcode/jabcodeRepo/src/jabcodeReader
 
 
@@ -29,4 +27,4 @@ done
 
 cat encryptedFiles/* > folder.tar.gz.enc
 openssl enc -aes-256-cbc -d -in folder.tar.gz.enc -out folder.tar.gz
-tar -xzvf folder.tar.gz -C death_star_images/
+tar -xzvf folder.tar.gz 

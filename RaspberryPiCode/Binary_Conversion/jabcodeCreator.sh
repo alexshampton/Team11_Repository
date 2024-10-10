@@ -15,18 +15,12 @@ FILENAME="Death_Star_Images"
 # Create output directory if it doesn't exist
 mkdir -p "jabcodes"
 mkdir -p "binary/binarySplit"
-# chmod -R 755 "$BIN_DIR"
-# chmod -R 755 "$BIN_SPLIT_DIR"
+
 make -C $HOME/Team11_Repository/Jabcode/jabcodeRepo/src/jabcodeWriter
-tar -czvf "$COMPRESSED_FILE" "$IMAGES_DIR" #Compresses images folder
+tar -czvf "$COMPRESSED_FILE" "death_star_images" #Compresses images folder
 md5sum "$COMPRESSED_FILE" > md5sum.txt
 openssl enc -aes-256-cbc -salt -in "$COMPRESSED_FILE" -out "$ENCRYPTED_FILE" 
 split -b 4k "$ENCRYPTED_FILE" "$BIN_SPLIT_DIR/$FILENAME"_
-# for bin_file in "$BIN_DIR"/*.bin; do
-#     base_name=$(basename "$bin_file" .bin)
-#     split -b 4k "$bin_file" "$BIN_SPLIT_DIR/$base_name-"
-#     echo $base_name 
-# done
 
 # Iterate over each .bin file in the bin directory
 COUNT=0
