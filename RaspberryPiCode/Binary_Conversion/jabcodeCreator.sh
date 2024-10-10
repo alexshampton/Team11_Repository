@@ -1,20 +1,16 @@
 #!/bin/bash
-# python3 imgToBin.py
-
 # Path to the jabcodeWriter binary
 JABCODE_WRITER="$HOME/Team11_Repository/Jabcode/jabcodeRepo/src/jabcodeWriter/bin/jabcodeWriter"
 
 # Input directory containing binary files
-BIN_DIR="binary"
-BIN_SPLIT_DIR="binary/binarySplit"
-IMAGES_DIR="$HOME/Team11_Repository/Death_Star_Images/Testing_Images" #CHANGE DIR TO DETECTED IMAGES
+BIN_SPLIT_DIR="binarySplit"
 COMPRESSED_FILE="Death_Star_Images.tar.gz"
 ENCRYPTED_FILE="Death_Star_Images.tar.gz.enc"
 FILENAME="Death_Star_Images"
 
 # Create output directory if it doesn't exist
 mkdir -p "jabcodes"
-mkdir -p "binary/binarySplit"
+mkdir -p "binarySplit"
 
 make -C $HOME/Team11_Repository/Jabcode/jabcodeRepo/src/jabcodeWriter
 tar -czvf "$COMPRESSED_FILE" "death_star_images" #Compresses images folder
