@@ -1,7 +1,7 @@
 JABCODE_READER="$HOME/Team11_Repository/Jabcode/jabcodeRepo/src/jabcodeReader/bin/jabcodeReader"
 
 # Input directory containing binary files
-JABCODE_DIR="$HOME/Team11_Repository/ServerCode/JabcodeRead/jabcodes" #CHANGE DIR TO JABCODE IMAGES
+JABCODE_DIR="$HOME/Team11_Repository/ServerCode/JabcodeReadWrite/JabcodeRead/jabcodes" #CHANGE DIR TO JABCODE IMAGES
 ENCRYPTED_DIR="$HOME/Team11_Repository/ServerCode/JabcodeRead/encryptedFiles"
 IMAGE_DIR="$HOME/Team11_Repository/ServerCode/JabcodeRead/death_star_images"
 
