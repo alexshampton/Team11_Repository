@@ -12,6 +12,6 @@ for i in range(int(num)):
     I1 = ImageDraw.Draw(img)
 
     # Add Text to an image
-    I1.text((250, 250), str(i), font=myFont, fill=(0, 0, 0))
+    I1.text((250, 250), str(i + 1), font=myFont, fill=(0, 0, 0))
     # Save the edited image
-    img.save("frames/" + ((len(num)-len(str(i)))*"0") + str(i) + ".png")
+    img.save("frames/" + ((len(num) - len(str(i))) * "0") + str(i) + ".png")
