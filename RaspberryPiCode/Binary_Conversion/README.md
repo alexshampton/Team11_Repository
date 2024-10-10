@@ -1,8 +1,5 @@
-# Detection Code
-## Dependencies
-* pillow==10.4.0
-
+# Binary_Conversion (Change name soon!)
 ## Scripts
-* imgToBin.py: Generates binary files for each image in the images folder. Checks /death_star_images for the images and stores the binary in /binary.
-    * Input: Images in the images directory
-    * Output: Binary files are outputted to the binary directory. The filename is retained during image to binary conversion. 
+* jabcodeCreator.sh: Compresses and encrypts `/death_star_images`, splits the encrypted directory into 4KB files in `/binarysplit`, and creates a jabcode for each split file into `/jabcodes`. 
+    * Input: Images in `/death_star_images`
+    * Output: Jabcode `.png` files in `/jabcodes`
