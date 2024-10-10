@@ -4,8 +4,10 @@ import cv2
 from PIL import Image
 import ffmpeg
 
+num_dupe_frames = 5  # TODO update number for num of time to duplicate each frame
+
 # Checking the current directory path
-print(os.getcwd())
+# print(os.getcwd())
 
 # Folder which contains all the images
 # from which video is to be generated
@@ -46,6 +48,8 @@ images = [
     for img in os.listdir(image_folder)
     if img.endswith(".jpg") or img.endswith(".jpeg") or img.endswith("png")
 ]
+
+images = (num_dupe_frames + 1) * images
 
 # Array images should only consider
 # the image files ignoring others if any
