@@ -14,6 +14,8 @@ RaspberryPiCode/Binary_Conversion/md5sum.txt
 RaspberryPiCode/Binary_Conversion/binary/binarySplit
 ServerCode/JabcodeRead/encryptedFiles
 ServerCode/JabcodeRead/compressedFiles
+ServerCode/JabcodeWrite/jabcodes
+ServerCode/JabcodeWrite/md5sum.txt
 *.tar*
 
 
