@@ -28,3 +28,4 @@ done
 cat encryptedFiles/* > folder.tar.gz.enc
 openssl enc -aes-256-cbc -d -in folder.tar.gz.enc -out folder.tar.gz
 tar -xzvf folder.tar.gz 
+md5sum folder.tar.gz > ../JabcodeWrite/md5sum.txt
