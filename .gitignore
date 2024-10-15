@@ -8,6 +8,7 @@ ServerCode/Web_Page_Code/__pycache__
 *.bin
 *.jpeg
 *.png 
+*.jpg
 RaspberryPiCode/Binary_Conversion/binary/binarySplit
 RaspberryPiCode/Binary_Conversion/*.tar*
 RaspberryPiCode/Binary_Conversion/md5sum.txt
@@ -17,6 +18,8 @@ ServerCode/JabcodeRead/compressedFiles
 ServerCode/JabcodeWrite/jabcodes
 ServerCode/JabcodeWrite/md5sum.txt
 *.tar*
+*Death_Star_Images_*
+RaspberryPiCode/assets/md5sumRP.txt
 
 
 
