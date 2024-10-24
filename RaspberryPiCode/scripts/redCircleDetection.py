@@ -1,8 +1,10 @@
 import cv2
 import numpy as np
+import os
 
+image_path = 'dstest2.jpeg'
 # Load the image
-image = cv2.imread('dstest2.jpeg')
+image = cv2.imread(image_path)
 
 # Convert the image to HSV (hue, saturation, value) space for better color detection
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
@@ -34,9 +36,9 @@ if circles is not None:
 
         # Draw the center of the circle
         # cv2.circle(image, (x, y), 2, (255, 0, 0), 3)
-
+    file_name = os.path.splitext(os.path.basename(image_path))[0]    
     print(f"Detected {len(circles)} circle(s).")
-
+    cv2.imwrite(file_name+ "RedCircle.jpeg", image)
     # Show the output image with the detected circle
     cv2.imshow("Detected Circle", image)
     cv2.waitKey(0)
