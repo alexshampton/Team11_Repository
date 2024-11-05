@@ -21,7 +21,7 @@ frame_width = int(cap.get(3))
 frame_height = int(cap.get(4))
 
 # Define the codec and create a VideoWriter object to save the video in anyone's home directory.
-output_path = r'~/output.mp4'
+output_path = r'~/test.mp4'
 out = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*'mp4v'), 30, (frame_width, frame_height))
 
 # Capture video frame by frame
