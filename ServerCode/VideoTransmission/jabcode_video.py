@@ -20,8 +20,8 @@ if cap.get(cv2.CAP_PROP_AUTO_EXPOSURE):
 frame_width = int(cap.get(3))
 frame_height = int(cap.get(4))
 
-# Define the codec and create a VideoWriter object to save the video
-output_path = r'C:\Users\ramen\OneDrive\Documents\WSU Dayton\Fall 2024\(2) Team Projects 2\recorded_videos\output.mp4'
+# Define the codec and create a VideoWriter object to save the video in anyone's home directory.
+output_path = r'~/output.mp4'
 out = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*'mp4v'), 30, (frame_width, frame_height))
 
 # Capture video frame by frame
