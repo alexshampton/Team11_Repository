@@ -1,7 +1,7 @@
 import cv2
 
 # Open the camera (1 = server camera, 0 = laptop camera)
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 # Check if the camera opened successfully
 if not cap.isOpened():
@@ -21,13 +21,9 @@ frame_width = int(cap.get(3))
 frame_height = int(cap.get(4))
 
 # Define the codec and create a VideoWriter object to save the video
-# Specify the path where the video will be saved using one of these three options:
+output_path = r'C:\Users\ramen\OneDrive\Documents\WSU Dayton\Fall 2024\(2) Team Projects 2\recorded_videos\output.mp4'
+out = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*'mp4v'), 30, (frame_width, frame_height))
 
-# Option 1: Escape the backslashes
-output_path = r'C:\Users\ramen\OneDrive\Documents\WSU Dayton\Fall 2024\(2) Team Projects 2\recorded_videos'
-# print(output_path)
-
-out = cv2.VideoWriter("output.mp4", cv2.VideoWriter_fourcc(*'mp4v'), 30, (frame_width, frame_height)) 
 # Capture video frame by frame
 while True:
     # Read the current frame
@@ -39,9 +35,6 @@ while True:
 
     # Write the frame to the output file
     out.write(frame)
-
-    # Save the frame in the output_path
-    # cv2.imwrite(output_path, out)
 
     # Display the frame in a window
     cv2.imshow('Webcam Video', frame)
