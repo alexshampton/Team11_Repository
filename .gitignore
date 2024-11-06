@@ -20,6 +20,6 @@ ServerCode/JabcodeWrite/md5sum.txt
 *.tar*
 *Death_Star_Images_*
 RaspberryPiCode/assets/md5sumRP.txt
-
+*/venv/*
 
 
