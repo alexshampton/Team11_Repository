@@ -16,6 +16,10 @@ if cap.get(cv2.CAP_PROP_AUTO_EXPOSURE):
 # Set exposure time (in milliseconds)
 # cap.set(cv2.CAP_PROP_EXPOSURE, -5)  # Adjust the value as needed
 
+# Control the server camera's focus manually.
+focus = 255  # min: 0, max: 255, can only be set in incremens of 5
+cap.set(28, focus) # `28` is the opencv2 key for setting the server camera's focus.
+
 # Get the default camera's frame width and height
 frame_width = int(cap.get(3))
 frame_height = int(cap.get(4))
@@ -50,4 +54,4 @@ out.release()
 # Close all OpenCV windows
 cv2.destroyAllWindows()
 
-# print(f"Video saved at: {output_path}")
+print(f"Video saved at: {output_path}")
